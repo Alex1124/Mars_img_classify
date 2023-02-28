@@ -22,17 +22,20 @@ Other is a catch-all class that contains images that fit none of the defined cla
 
 
 使用Pytorch實作:
-1.CNN殘差網路
-2.資料擴增
-3.自訂客製化資料集類別
-4.resnet18遷移式學習
-5.凍結層數只訓練FC層
-6.演算法嘗試Adam、Nadam
-7.學習率嘗試StepLR、ReduceLROnPlateau、OneCycleLR
-8.訓練時使用提早結束學習，儲存最佳模型結果
+* CNN殘差網路
+* 資料擴增
+  * 方法一: 將所有擴增效果包裹在一個組合，讓效果隨機影響資料，進行擴增
+  * 方法二: 缺點很吃效能與大量時間，將各個擴增效果，讓資料集分別擴增厚，在合併，優點資料集擴增很全面，且資料量多足夠機器學習圖片模式。
+* 自訂客製化資料集類別
+* resnet18遷移式學習
+* 凍結層數只訓練FC層
+* 演算法嘗試Adam、Nadam
+* 學習率嘗試StepLR、ReduceLROnPlateau、OneCycleLR
+* 訓練時使用提早結束學習，儲存最佳模型結果
 
 遇到問題:
 Q1.混淆矩陣顯示多類別的Precision、Recall在某些類別極糟?
+
 A1.因為特定類別極多，其他類別都很少，因此導致訓練其他類別不佳。將公開資料集二個版本合併，使其他類別數量增加讓演算法可以學到圖片模式
 
 
