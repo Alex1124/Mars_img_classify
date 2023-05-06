@@ -21,6 +21,10 @@ https://zenodo.org/record/4002935#.Y_2-l3ZBxhE
 
 * Other is a catch-all class that contains images that fit none of the defined classes of interest. This class makes up the majority of our data set.
 
+模型結構:
+![Mars_classfy](https://user-images.githubusercontent.com/26739923/236605919-b27bed97-9219-49ba-8b90-c398f54e1cb4.png)
+
+
 
 使用Pytorch實作:
 * CNN殘差網路
