@@ -30,6 +30,10 @@ https://zenodo.org/record/4002935#.Y_2-l3ZBxhE
 使用Pytorch實作:
 * CNN殘差網路
 * 資料擴增
+
+影像擴增各種效果：
+https://pytorch.org/vision/main/auto_examples/plot_transforms.html#sphx-glr-auto-examples-plot-transforms-py
+
   * 方法一: 將所有擴增效果包裹在一個組合，讓效果隨機影響資料，進行擴增
   * 方法二: 缺點很吃效能與大量時間，將各個擴增效果，讓資料集分別擴增厚，在合併，優點資料集擴增很全面，且資料量多足夠機器學習圖片模式。
 * 自訂客製化資料集類別
